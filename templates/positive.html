@@ -1,0 +1,52 @@
+{{ tStrToLoad | safe }}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>
+            Lumi Project
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <p class="inner ">Something here.</p>
+            <img src="{{ url_for('static', filename='pics/kubrick.jpg') }}" class="center" alt="Kubrick">
+        </div>
+        <p class="titleHead">Lumi Project</p>
+        <br>
+        <p class="middleCard">
+            Aren't you tired of sitting down to watch a movie, and by the time you're picking which one your youngest daughter has finished college and is now a prestiged doctor?
+            <br>
+            Well, no more, Lumi is here to help you!
+        </p>
+        <br>
+        <div class="movie">
+            <h3>
+                Recommendations based on {{ search_name }}
+            </h3>
+            <table class="movie_table">
+                <tr>
+                    <th> Movie Title </th>
+                    <th> Release Date </th>
+                </tr>
+                <tbody class="table_body">
+                    <tr>
+                        <td> {{movie_names[0] }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{movie_names[1] }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{movie_names[2] }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{movie_names[3] }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{movie_names[4] }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
