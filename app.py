@@ -15,7 +15,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 #flask
 import flask
-from flask import render_template
+from flask import render_template, Flask
 
 #Here we import our dataframes from the file
 path1 = os.getcwd()
@@ -24,7 +24,7 @@ path2 = os.getcwd()
 path2 += "/files/tmdb_5000_credits.csv" #join current path with this files
 
 #Create the Flask app
-app = flask.Flask(__name__,)
+app = flask.Flask(__name__)
 
 #Find the dataframes
 df_data = pd.read_csv(path1,error_bad_lines=False)
@@ -137,4 +137,4 @@ def main():
             return flask.render_template('positive.html', movie_names=names, search_name=movie_name)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
