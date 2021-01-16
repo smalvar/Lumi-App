@@ -2,3 +2,6 @@ flask
 gunicorn
 sklearn
 pandas
+json
+ast
+os
