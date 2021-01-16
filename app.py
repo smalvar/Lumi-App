@@ -1,14 +1,10 @@
 #standard packages
-import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 import json
 from ast import literal_eval
 import os
 
 #Machine Learning libraries
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics.pairwise import linear_kernel
@@ -16,10 +12,6 @@ from sklearn.metrics.pairwise import linear_kernel
 #flask
 import flask
 from flask import render_template, Flask
-
-#Here we import our dataframes from the file
-path1 = "./files/tmdb_5000_movies.csv" #join current path with this files
-path2 = "./files/tmdb_5000_credits.csv" #join current path with this files
 
 #Create the Flask app
 app = flask.Flask(__name__)
@@ -94,7 +86,7 @@ df_merge['cast_all'] = df_merge.apply(lambda row: str(row.cast1) + " " + str(row
 df_merge['soup'] = df_merge.apply(lambda row: str(row.cast_all).lower() + " " + str(row.genres).lower() + " " + str(row.keywords).lower(), axis=1)
 
 """
-This section is dedicated for the soup vectrizer itself
+This section is dedicated for the soup vectorizer itself
 """
 #So we don't make permanent change to the created dataframe
 df_vector = df_merge.copy()
