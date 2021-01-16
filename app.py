@@ -14,7 +14,7 @@ import flask
 from flask import render_template, Flask
 
 #Create the Flask app
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, template_folder='templates')
 
 #Find the dataframes
 df_data = pd.read_csv("./files/tmdb_5000_movies.csv",error_bad_lines=False)
