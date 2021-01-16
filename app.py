@@ -18,17 +18,15 @@ import flask
 from flask import render_template, Flask
 
 #Here we import our dataframes from the file
-path1 = os.getcwd()
-path1 += "/files/tmdb_5000_movies.csv" #join current path with this files
-path2 = os.getcwd()
-path2 += "/files/tmdb_5000_credits.csv" #join current path with this files
+path1 = "./files/tmdb_5000_movies.csv" #join current path with this files
+path2 = "./files/tmdb_5000_credits.csv" #join current path with this files
 
 #Create the Flask app
 app = flask.Flask(__name__)
 
 #Find the dataframes
-df_data = pd.read_csv(path1,error_bad_lines=False)
-df_credits = pd.read_csv(path2,error_bad_lines=False)
+df_data = pd.read_csv("./files/tmdb_5000_movies.csv",error_bad_lines=False)
+df_credits = pd.read_csv("./files/tmdb_5000_credits.csv",error_bad_lines=False)
 
 #Drop useless columns from df_data
 df_data_drop = df_data.drop(columns=['homepage','original_language','production_countries','spoken_languages','status','production_companies'],axis=1)
