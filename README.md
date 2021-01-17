@@ -15,9 +15,13 @@ By using Kaggle's **The Movie Dataset**, with over 5000 titles from the XXth cen
 
 The user then write's the title's name of the movie he wishes to get recommendation to similarity and the app returns a list of 5 titles. <br>
 
-Shoutout to *@inboxpraveen* who first posted this project on GitHub and Medium and served as inspiration.
+## Shoutout
+*@inboxpraveen* who first posted this project on GitHub and Medium and served as inspiration and *@saramalvar* for being the tutor during the development.
 
-The current state of development is trying to upload it to Heroku, but I must confess this has been quite troublesome.
+## Current State of Development
+The current state of development is trying to upload it to Heroku, but I must confess this has been quite troublesome, so I'm analyzing other alternatives. <br>
+
+Also some refactoring on the code is due and perhaps methodology testing. On previous versions I also used TfidfVectorizer, but the results weren't as good.
 
 ## In-Between
 
