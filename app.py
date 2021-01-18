@@ -127,4 +127,4 @@ def main():
             return flask.render_template('positive.html', movie_names=names, search_name=movie_name)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="127.0.0.1", port=8080, debug=True)
