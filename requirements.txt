@@ -6,7 +6,7 @@ Jinja2==2.11.2
 joblib==0.16.0
 MarkupSafe==1.1.1
 numpy==1.19.5
-setuptools==24.2.0
+setuptools==51.3.3
 pytz==2017.3
 python-dateutil==2.8.1
 python-dotenv==0.14.0
