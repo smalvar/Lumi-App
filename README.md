@@ -1,4 +1,4 @@
-# Lumi-App
+# [Lumi-App](https://lumi-app.herokuapp.com/)
 
 ## Movie recommendation system app!
 
@@ -19,7 +19,7 @@ The user then write's the title's name of the movie he wishes to get recommendat
 *@inboxpraveen* who first posted this project on GitHub and Medium and served as inspiration and *@saramalvar* for being the tutor during the development.
 
 ## Current State of Development
-The current state of development is trying to upload it to Heroku, but I must confess this has been quite troublesome, so I'm analyzing other alternatives. <br>
+The current state of development is improving the front-end and trying out different approaches to improve the recommendation since it isn't perfect yet <br>
 
 Also some refactoring on the code is due and perhaps methodology testing. On previous versions I also used TfidfVectorizer, but the results weren't as good.
 
