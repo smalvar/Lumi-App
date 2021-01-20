@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>
             Lumi Project
         </title>
@@ -8,13 +8,11 @@
     <body>
         <div class="container">
             <p class="inner ">Something here.</p>
-            <img src="pics/kubrick.jpg" class="center" alt="Kubrick">
+            <img src="{{ url_for('static', filename='pics/kubrick.jpg') }}" class="center" alt="Kubrick">
         </div>
         <p class="titleHead">Lumi Project</p>
-        <br>
         <p class="middleCard">
-            Oops! Looks like something went wrong. That's too bad!
+            Why don't you try again with another movie?
         </p>
-        <br>
     </body>
 </html>

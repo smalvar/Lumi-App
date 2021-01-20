@@ -39,13 +39,3 @@ p {
     font-family: 'OpenSans';
     text-align: center;
 }
-
-#table_body {
-    font-family: 'OpenSans';
-    text-align: center;
-}
-
-#table_body th {
-    background-color: #4CAF50;
-    color: white;
-}

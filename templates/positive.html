@@ -1,8 +1,14 @@
-{{ tStrToLoad | safe }}
-
 <html>
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+            table,tr,td,th{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            #movie_table tr:nth-child(even){background-color: #f2f2f2;}
+            #movie_table tr:hover {background-color: #ddd;}
+        </style>
         <title>
             Lumi Project
         </title>
@@ -13,37 +19,32 @@
             <img src="{{ url_for('static', filename='pics/kubrick.jpg') }}" class="center" alt="Kubrick">
         </div>
         <p class="titleHead">Lumi Project</p>
-        <br>
         <p class="middleCard">
-            Aren't you tired of sitting down to watch a movie, and by the time you're picking which one your youngest daughter has finished college and is now a prestiged doctor?
-            <br>
-            Well, no more, Lumi is here to help you!
+            The perfect app for undecided people.
         </p>
-        <br>
         <div class="movie">
             <h3>
-                Recommendations based on {{ search_name }}
+                <p class="middleCard"> Recommendations based on {{ search_name }} </p>
             </h3>
-            <table class="movie_table">
+            <table id="movie_table" align="center">
                 <tr>
-                    <th> Movie Title </th>
-                    <th> Release Date </th>
+                    <th> <p class="middleCard"> Movie Title </p></th>
                 </tr>
                 <tbody class="table_body">
                     <tr>
-                        <td> {{movie_names[0] }}</td>
+                        <td> <p class="middleCard"> {{ movie_names[0] }}</p></td>
                     </tr>
                     <tr>
-                        <td> {{movie_names[1] }}</td>
+                        <td> <p class="middleCard">{{ movie_names[1] }}</p></td>
                     </tr>
                     <tr>
-                        <td> {{movie_names[2] }}</td>
+                        <td> <p class="middleCard">{{ movie_names[2] }}</p></td>
                     </tr>
                     <tr>
-                        <td> {{movie_names[3] }}</td>
+                        <td> <p class="middleCard">{{ movie_names[3] }}</p></td>
                     </tr>
                     <tr>
-                        <td> {{movie_names[4] }}</td>
+                        <td> <p class="middleCard">{{ movie_names[4] }}</p></td>
                     </tr>
                 </tbody>
             </table>
