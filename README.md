@@ -1,3 +1,8 @@
+## AWARI MENTORSHIP - Final Project
+### Mentee: [Marco Aurelio Gemaque](https://github.com/marcogemaque)
+_____________________________________________
+
+
 # [Lumi-App](https://lumi-app.herokuapp.com/)
 
 ## Movie recommendation system app!
